@@ -1,0 +1,7 @@
+@import url(nreset.css);
+
+body {
+  color: white;
+  background-color: #313131;
+  font-family: 'Roboto', sans-serif;
+}
