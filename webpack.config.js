@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: development,
+  mode: 'development',
   entry: {
     main: ['./src/index.js', 'webpack-hot-middleware/client'],
   },
@@ -30,6 +30,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new HTMLWebpackPlugin({
       title: 'Le Temp',
+      template: './src/index.html',
     }),
     new webpack.SourceMapDevToolPlugin({
       test: /\.s?[as]ss?/i,
