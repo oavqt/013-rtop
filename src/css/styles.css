@@ -1,7 +1,88 @@
 @import url(nreset.css);
 
+a {
+  text-decoration: none;
+}
+
 body {
-  color: white;
-  background-color: #313131;
   font-family: 'Roboto', sans-serif;
+}
+
+button {
+  background: transparent;
+  border: none;
+  height: 3em;
+  width: 4em;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.button--cart {
+  background: url(../images/cart.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 2em;
+  margin-right: 0.5em;
+}
+
+.button--up {
+  color: white;
+  background: #db2b39;
+  border-radius: 2em;
+  height: 4em;
+  transition: all ease-out 0.2s;
+  width: 8em;
+}
+
+.button--up:hover {
+  box-shadow: 0 1rem 1rem 0 #db2b3a33;
+  transform: translateY(-0.2rem);
+}
+
+li {
+  list-style: none;
+  margin: 0 1em;
+}
+
+ul {
+  display: flex;
+  margin: 0;
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 75vw;
+}
+
+.content__header {
+  position: fixed;
+  top: 0;
+  width: 75vw;
+}
+
+.header__nav {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__bar {
+  align-items: flex-end;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav__list {
+  margin: 0 auto;
+}
+
+.nav__button {
+  align-items: center;
+  display: flex;
 }
