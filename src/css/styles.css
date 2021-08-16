@@ -41,6 +41,31 @@ button:hover {
   transform: translateY(-0.2rem);
 }
 
+.button--banner {
+  color: white;
+  background: #db2b39;
+  border-radius: 2em;
+  height: 4em;
+  transition: all ease-out 0.2s;
+  width: 8em;
+}
+
+.button--banner:hover {
+  box-shadow: 0 1rem 1rem 0 #db2b3a33;
+  transform: translateY(-0.2rem);
+}
+
+header {
+  height: 100%;
+}
+
+.img--banner {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+
 li {
   list-style: none;
   margin: 0 1em;
@@ -54,25 +79,27 @@ ul {
 .content {
   align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin: auto;
   width: 75vw;
 }
 
 .content__header {
-  position: fixed;
-  top: 0;
+  height: 8vh;
+  position: sticky;
   width: 75vw;
 }
 
 .header__nav {
-  align-items: flex-end;
+  align-items: center;
   display: flex;
+  height: 100%;
   justify-content: space-between;
 }
 
 .nav__bar {
-  align-items: flex-end;
+  align-items: center;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -85,4 +112,25 @@ ul {
 .nav__button {
   align-items: center;
   display: flex;
+}
+
+.content__banner {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 85vh;
+  margin-top: 2em;
+  overflow: hidden;
+  width: 100%;
+}
+
+.banner__information {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.information__text {
+  font-size: 3rem;
 }
