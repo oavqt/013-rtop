@@ -4,6 +4,14 @@ a {
   text-decoration: none;
 }
 
+.a--temp {
+  margin: 0 1em;
+}
+
+.a--temp:nth-child(1) {
+  margin: 0;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -64,6 +72,28 @@ header {
   max-width: 100%;
   object-fit: cover;
   object-position: right;
+}
+
+.img--apple {
+  border-radius: 5em;
+  margin: 0 1em;
+  transition: all ease-out 0.2s;
+}
+
+.img--apple:hover {
+  box-shadow: 0 1rem 1rem 0 #31313133;
+  transform: translateY(-0.2rem);
+}
+
+.img--play {
+  border-radius: 5em;
+  margin: 0 1em;
+  transition: all ease-out 0.2s;
+}
+
+.img--play:hover {
+  box-shadow: 0 1rem 1rem 0 #31313133;
+  transform: translateY(-0.2rem);
 }
 
 li {
@@ -136,7 +166,7 @@ ul {
 }
 
 .content__description {
-  margin: 2em 0;
+  margin: 5em 0;
   width: 100%;
 }
 
@@ -161,4 +191,30 @@ ul {
 .deliver__description,
 .quality__description {
   padding: 0 2em;
+}
+
+.content__footer {
+  margin: 5em 0 0;
+  width: 100%;
+}
+
+.footer__download {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto 8em;
+}
+
+.download__mobile {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5em auto;
+}
+
+.footer__links {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
