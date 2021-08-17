@@ -9,7 +9,7 @@ const theBanner = () => {
       'div',
       { class: 'banner__information' },
       element.create(
-        'p',
+        'h1',
         { class: 'information__text' },
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit.'
       ),
