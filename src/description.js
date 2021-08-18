@@ -1,7 +1,7 @@
 import element from './element';
-import order from './images/order.png';
-import deliver from './images/deliver.png';
-import quality from './images/quality.png';
+import order from './images/myOrder.png';
+import deliver from './images/myDeliver.png';
+import quality from './images/myQuality.png';
 
 const theDescription = () => {
   //Description Title

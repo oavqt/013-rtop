@@ -1,5 +1,6 @@
 import element from './element';
-import logo from './images/logo.png';
+import logo from './images/myLogo.png';
+import cart from './images/myCart.png';
 
 const theNavBar = () => {
   const theNav = element.create(
@@ -61,7 +62,11 @@ const theNavBar = () => {
           element.create(
             'div',
             { class: 'nav__button' },
-            element.create('button', { class: 'button--cart' }),
+            element.create(
+              'button',
+              { class: 'button--cart' },
+              element.create('img', { class: 'img--cart', src: cart })
+            ),
             element.create('button', { class: 'button--up' }, 'Sign Up')
           )
         )

@@ -1,6 +1,7 @@
 import theNavBar from './nav';
 import theBanner from './banner';
 import theDescription from './description';
+import theMenu from './menu';
 import theFooter from './footer';
 
 const build = () => {
@@ -9,6 +10,7 @@ const build = () => {
   content.appendChild(theNavBar());
   content.appendChild(theBanner());
   content.appendChild(theDescription());
+  content.appendChild(theMenu());
   content.appendChild(theFooter());
 };
 
