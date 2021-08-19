@@ -147,9 +147,8 @@ li {
   margin: 0 1em;
 }
 
-ul {
-  display: flex;
-  margin: 0;
+q {
+  font-style: italic;
 }
 
 .title__main {
@@ -164,6 +163,11 @@ ul {
   margin: 1em auto;
   text-align: center;
   width: 50%;
+}
+
+ul {
+  display: flex;
+  margin: 0;
 }
 
 /* Page */
@@ -275,6 +279,20 @@ ul {
   font-size: 1rem;
   font-weight: normal;
   width: 75%;
+}
+
+/* About */
+.content__about {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.content__about .description__body {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Footer */
