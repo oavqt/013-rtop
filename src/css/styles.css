@@ -63,6 +63,21 @@ button:hover {
   transform: translateY(-0.2rem);
 }
 
+.button--input {
+  color: white;
+  background: #db2b39;
+  border-radius: 2em;
+  height: 4em;
+  margin: 0.5em 0;
+  transition: all ease-out 0.2s;
+  width: 8em;
+}
+
+.button--input:hover {
+  box-shadow: 0 1rem 1rem 0 #db2b3a33;
+  transform: translateY(-0.2rem);
+}
+
 .button--up {
   color: white;
   background: #db2b39;
@@ -92,6 +107,13 @@ header {
   height: 100%;
 }
 
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+
 .img--apple {
   border-radius: 5em;
   margin: 0 1em;
@@ -103,16 +125,8 @@ header {
   transform: translateY(-0.2rem);
 }
 
-.img--banner {
-  height: auto;
-  max-width: 100%;
-  object-fit: cover;
-  object-position: right;
-}
-
 .img--card {
   margin: auto 0;
-  max-width: 100%;
 }
 
 .img--cart {
@@ -123,12 +137,6 @@ header {
 .img--cart:hover {
   box-shadow: inset 0 1rem 1rem 0 #db2b3a33;
   transform: translateY(0.2rem);
-}
-
-.img--order,
-.img--deliver,
-.img--quality {
-  max-width: 100%;
 }
 
 .img--play {
@@ -142,6 +150,22 @@ header {
   transform: translateY(-0.2rem);
 }
 
+input {
+  border: 0.1em solid transparent;
+  box-shadow: inset 0 0 1rem 0 #31313133;
+  height: 3em;
+  min-width: 100%;
+}
+
+input:focus {
+  border: 0.1em solid #1c87c9;
+  outline: none;
+}
+
+label {
+  width: 100%;
+}
+
 li {
   list-style: none;
   margin: 0 1em;
@@ -149,6 +173,19 @@ li {
 
 q {
   font-style: italic;
+}
+
+textarea {
+  border: 0.1em solid transparent;
+  box-shadow: inset 0 0 1rem 0 #31313133;
+  height: 15em;
+  min-width: 100%;
+  resize: vertical;
+}
+
+textarea:focus {
+  border: 0.1em solid #1c87c9;
+  outline: none;
 }
 
 .title__main {
@@ -215,7 +252,7 @@ ul {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  height: 85vh;
+  height: 100%;
   margin-top: 2em;
   overflow: hidden;
   width: 100%;
@@ -293,6 +330,44 @@ ul {
 .content__about .description__body {
   display: flex;
   flex-direction: column;
+}
+
+/* Contact */
+.content__contact {
+  width: 100%;
+}
+
+.contact__body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.body__form {
+  width: 100%;
+}
+
+.form__title .title__main {
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.form__title .title__sub {
+  margin: 0 0 1em;
+  text-align: left;
+  width: 75%;
+}
+
+.body__input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.body__input span {
+  display: block;
+  margin: 0.2em 0;
 }
 
 /* Footer */

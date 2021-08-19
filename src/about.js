@@ -8,6 +8,11 @@ const theAbout = () => {
     { class: 'content__about' },
     element.create(
       'div',
+      { class: 'content__title' },
+      element.create('h1', { class: 'title__main' }, 'theAbout')
+    ),
+    element.create(
+      'div',
       { class: 'about__img' },
       element.create('img', { class: 'img--about', src: about })
     ),
