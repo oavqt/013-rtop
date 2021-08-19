@@ -31,13 +31,13 @@ const theMenu = () => {
         'Necessitatibus ratione molestiae eos maxime ea consequatur nostrum consequuntur corporis quas cupiditate. Asperiores, ipsa.'
       )
     ),
-    //Menu Items
+    //Menu Cards
     element.create(
       'div',
-      { class: 'menu__group' },
+      { class: 'menu__body' },
       element.create(
         'div',
-        { class: 'group__item' },
+        { class: 'body__item' },
         element.create(
           'div',
           { class: 'item__card' },
@@ -101,7 +101,7 @@ const theMenu = () => {
       ),
       element.create(
         'div',
-        { class: 'group__item' },
+        { class: 'body__item' },
         element.create(
           'div',
           { class: 'item__card' },
@@ -165,7 +165,7 @@ const theMenu = () => {
       ),
       element.create(
         'div',
-        { class: 'group__item' },
+        { class: 'body__item' },
         element.create(
           'div',
           { class: 'item__card' },
@@ -229,7 +229,7 @@ const theMenu = () => {
       ),
       element.create(
         'div',
-        { class: 'group__item' },
+        { class: 'body__item' },
         element.create(
           'div',
           { class: 'item__card' },
@@ -293,7 +293,7 @@ const theMenu = () => {
       ),
       element.create(
         'div',
-        { class: 'group__item' },
+        { class: 'body__item' },
         element.create(
           'div',
           { class: 'item__card' },
@@ -357,7 +357,7 @@ const theMenu = () => {
       ),
       element.create(
         'div',
-        { class: 'group__item' },
+        { class: 'body__item' },
         element.create(
           'div',
           { class: 'item__card' },

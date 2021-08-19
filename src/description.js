@@ -4,7 +4,7 @@ import deliver from './images/myDeliver.png';
 import quality from './images/myQuality.png';
 
 const theDescription = () => {
-  //Description Title
+  //Description
   const thePoints = element.create(
     'div',
     { class: 'content__description' },
@@ -21,19 +21,19 @@ const theDescription = () => {
     //Description Cards
     element.create(
       'div',
-      { class: 'description__card' },
+      { class: 'description__body' },
 
       element.create(
         'div',
-        { class: 'card__order' },
+        { class: 'body__order' },
         element.create(
           'a',
-          { class: 'a--card', href: '' },
+          { class: 'a--order', href: '' },
           element.create('img', { class: 'img--order', src: order })
         ),
         element.create(
           'div',
-          { class: 'order__description' },
+          { class: 'order__text' },
           element.create('h3', {}, 'Illum voluptatibus!'),
           element.create(
             'p',
@@ -44,15 +44,15 @@ const theDescription = () => {
       ),
       element.create(
         'div',
-        { class: 'card__deliver' },
+        { class: 'body__deliver' },
         element.create(
           'a',
-          { class: 'a--card', href: '' },
+          { class: 'a--deliver', href: '' },
           element.create('img', { class: 'img--deliver', src: deliver })
         ),
         element.create(
           'div',
-          { class: 'deliver__description' },
+          { class: 'deliver__text' },
           element.create('h3', {}, 'Numquam eaque rerum!'),
           element.create(
             'p',
@@ -63,15 +63,15 @@ const theDescription = () => {
       ),
       element.create(
         'div',
-        { class: 'card__quality' },
+        { class: 'body__quality' },
         element.create(
           'a',
-          { class: 'a--card', href: '' },
+          { class: 'a--quality', href: '' },
           element.create('img', { class: 'img--quality', src: quality })
         ),
         element.create(
           'div',
-          { class: 'quality__description' },
+          { class: 'quality__text' },
           element.create('h3', {}, 'Mollitia vero quam.'),
           element.create(
             'p',

@@ -32,7 +32,7 @@ const theFooter = () => {
 
         element.create(
           'div',
-          { class: 'download__mobile' },
+          { class: 'download__body' },
           element.create(
             'a',
             { class: 'a--apple', href: '' },

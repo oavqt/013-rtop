@@ -5,20 +5,19 @@ a {
   text-decoration: none;
 }
 
-.a--temp {
-  margin: 0 1em;
-}
-
-.a--temp:nth-child(1) {
-  margin: 0;
-}
-
 .a--card {
   align-items: center;
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 100%;
+}
+.a--temp {
+  margin: 0 1em;
+}
+
+.a--temp:nth-child(1) {
+  margin: 0;
 }
 
 body {
@@ -34,20 +33,6 @@ button {
 
 button:hover {
   cursor: pointer;
-}
-
-.button--up {
-  color: white;
-  background: #db2b39;
-  border-radius: 2em;
-  height: 4em;
-  transition: all ease-out 0.2s;
-  width: 8em;
-}
-
-.button--up:hover {
-  box-shadow: 0 1rem 1rem 0 #db2b3a33;
-  transform: translateY(-0.2rem);
 }
 
 .button--banner {
@@ -78,31 +63,33 @@ button:hover {
   transform: translateY(-0.2rem);
 }
 
+.button--up {
+  color: white;
+  background: #db2b39;
+  border-radius: 2em;
+  height: 4em;
+  transition: all ease-out 0.2s;
+  width: 8em;
+}
+
+.button--up:hover {
+  box-shadow: 0 1rem 1rem 0 #db2b3a33;
+  transform: translateY(-0.2rem);
+}
+
+.description__body {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.description__title {
+  font-weight: normal;
+  text-align: center;
+}
+
 header {
   height: 100%;
-}
-
-.img--cart {
-  border-radius: 2em;
-  transition: all ease-out 0.2s;
-}
-
-.img--cart:hover {
-  box-shadow: inset 0 1rem 1rem 0 #db2b3a33;
-  transform: translateY(0.2rem);
-}
-
-.img--banner {
-  height: auto;
-  max-width: 100%;
-  object-fit: cover;
-  object-position: right;
-}
-
-.img--order,
-.img--deliver,
-.img--quality {
-  max-width: 100%;
 }
 
 .img--apple {
@@ -116,6 +103,34 @@ header {
   transform: translateY(-0.2rem);
 }
 
+.img--banner {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+
+.img--card {
+  margin: auto 0;
+  max-width: 100%;
+}
+
+.img--cart {
+  border-radius: 2em;
+  transition: all ease-out 0.2s;
+}
+
+.img--cart:hover {
+  box-shadow: inset 0 1rem 1rem 0 #db2b3a33;
+  transform: translateY(0.2rem);
+}
+
+.img--order,
+.img--deliver,
+.img--quality {
+  max-width: 100%;
+}
+
 .img--play {
   border-radius: 5em;
   margin: 0 1em;
@@ -125,11 +140,6 @@ header {
 .img--play:hover {
   box-shadow: 0 1rem 1rem 0 #31313133;
   transform: translateY(-0.2rem);
-}
-
-.img--card {
-  margin: auto 0;
-  max-width: 100%;
 }
 
 li {
@@ -156,6 +166,7 @@ ul {
   width: 50%;
 }
 
+/* Page */
 .content {
   align-items: center;
   display: flex;
@@ -195,37 +206,6 @@ ul {
   display: flex;
 }
 
-/* Footer */
-.content__footer {
-  margin: 5em 0 0;
-  width: 100%;
-}
-
-.footer__download {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto 8em;
-}
-
-.download__title {
-  width: 100%;
-}
-
-.download__mobile {
-  align-items: center;
-  display: flex;
-  justify-content: space-evenly;
-  margin: 5em auto;
-}
-
-.footer__links {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-
 /* Home */
 .content__banner {
   align-items: center;
@@ -237,15 +217,11 @@ ul {
   width: 100%;
 }
 
-.banner__information {
+.banner__description {
   align-items: center;
   display: flex;
   flex-direction: column;
   width: 25%;
-}
-
-.information__text {
-  font-size: 3rem;
 }
 
 .content__description {
@@ -253,15 +229,9 @@ ul {
   width: 100%;
 }
 
-.description__card {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-
-.card__order,
-.card__deliver,
-.card__quality {
+.body__order,
+.body__deliver,
+.body__quality {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -270,9 +240,9 @@ ul {
   width: 35em;
 }
 
-.order__description,
-.deliver__description,
-.quality__description {
+.order__text,
+.deliver__text,
+.quality__text {
   padding: 0 2em;
 }
 
@@ -281,7 +251,7 @@ ul {
   width: 100%;
 }
 
-.group__item {
+.body__item {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -305,4 +275,35 @@ ul {
   font-size: 1rem;
   font-weight: normal;
   width: 75%;
+}
+
+/* Footer */
+.content__footer {
+  margin: 5em 0 0;
+  width: 100%;
+}
+
+.footer__download {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto 8em;
+}
+
+.download__title {
+  width: 100%;
+}
+
+.download__body {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5em auto;
+}
+
+.footer__links {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
