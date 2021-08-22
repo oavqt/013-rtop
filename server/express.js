@@ -2,11 +2,11 @@ const express = require('express');
 
 const server = express();
 const webpack = require('webpack');
-const config = require('../webpack.config');
+const config = require('../webpack.dev');
 const compiler = webpack(config);
 
 const webpackDevMiddleWare = require('webpack-dev-middleware')(compiler, {
-  publicPath: config.output.pubilcPath,
+  publicPath: '/',
 });
 const webpackHotMiddleWare = require('webpack-hot-middleware')(compiler, {
   reload: true,

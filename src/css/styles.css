@@ -362,6 +362,10 @@ ul {
   margin-bottom: 0;
 }
 
+.about__description .title__main {
+  margin-top: 0;
+}
+
 /* Contact */
 .content__contact {
   width: 100%;
@@ -416,6 +420,10 @@ ul {
 
 .download__title {
   width: 100%;
+}
+
+.download__title .title__main {
+  margin-top: 0;
 }
 
 .download__body {
