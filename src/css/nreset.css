@@ -106,7 +106,6 @@ hr {
 html {
   box-sizing: border-box;
   line-height: 1.15;
-  scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
 }
 

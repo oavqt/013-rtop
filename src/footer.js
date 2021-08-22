@@ -107,7 +107,11 @@ const theFooter = () => {
           { class: 'links__social' },
           element.create(
             'a',
-            { class: 'a--github', href: '' },
+            {
+              class: 'a--github',
+              href: 'https://github.com/oavqt',
+              target: '_blank',
+            },
             element.create('img', { class: 'img--github', src: github })
           ),
           element.create(

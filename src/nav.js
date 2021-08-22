@@ -36,24 +36,36 @@ const theNavBar = () => {
               element.create(
                 'li',
                 { class: 'li--home' },
-                element.create('a', { class: 'a--home', href: '' }, 'Home')
+                element.create(
+                  'a',
+                  { class: 'a--home', ['data-page']: 'home' },
+                  'Home'
+                )
               ),
               element.create(
                 'li',
                 { class: 'li--menu' },
-                element.create('a', { class: 'a--menu', href: '' }, 'Menu')
+                element.create(
+                  'a',
+                  { class: 'a--menu', ['data-page']: 'menu' },
+                  'Menu'
+                )
               ),
               element.create(
                 'li',
                 { class: 'li--about' },
-                element.create('a', { class: 'a--about', href: '' }, 'About Us')
+                element.create(
+                  'a',
+                  { class: 'a--about', ['data-page']: 'about' },
+                  'About Us'
+                )
               ),
               element.create(
                 'li',
                 { class: 'li--contact' },
                 element.create(
                   'a',
-                  { class: 'a--contact', href: '' },
+                  { class: 'a--contact', ['data-page']: 'contact' },
                   'Contact'
                 )
               )
