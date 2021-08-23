@@ -1,50 +1,56 @@
 import theNavBar from './nav';
 import theBanner from './banner';
 import theDescription from './description';
-import theMenu from './menu';
-import theAbout from './about';
-import theContact from './contact';
 import theFooter from './footer';
 
 //Build DOM
 const build = {
   home: () => {
-    const content = document.querySelector('.content');
-
-    content.appendChild(theNavBar());
-    content.appendChild(theBanner());
-    content.appendChild(theDescription());
-    content.appendChild(theFooter());
+    build.append('home');
   },
 
-  menu: () => {
-    const content = document.querySelector('.content');
+  menu: async () => {
+    const { default: theMenu } = await import(
+      /*webpackChunkName: 'theMenu'*/ './menu'
+    );
 
-    content.appendChild(theNavBar());
-    content.appendChild(theMenu());
-    content.appendChild(theFooter());
+    build.append();
 
-    document.querySelector('.a--menu').classList.add('a--active');
+    return { default: theMenu() };
   },
 
-  about: () => {
-    const content = document.querySelector('.content');
+  about: async () => {
+    const { default: theAbout } = await import(
+      /*webpackChunkName: 'theAbout'*/ './about'
+    );
 
-    content.appendChild(theNavBar());
-    content.appendChild(theAbout());
-    content.appendChild(theFooter());
+    build.append();
 
-    document.querySelector('.a--about').classList.add('a--active');
+    return { default: theAbout() };
   },
 
-  contact: () => {
+  contact: async () => {
+    const { default: theContact } = await import(
+      /*webpackChunkName: 'theContact'*/ './contact'
+    );
+
+    build.append();
+
+    return { default: theContact() };
+  },
+
+  append: (home) => {
     const content = document.querySelector('.content');
 
-    content.appendChild(theNavBar());
-    content.appendChild(theContact());
-    content.appendChild(theFooter());
-
-    document.querySelector('.a--contact').classList.add('a--active');
+    if (home) {
+      content.appendChild(theNavBar());
+      content.appendChild(theBanner());
+      content.appendChild(theDescription());
+      content.appendChild(theFooter());
+    } else {
+      content.appendChild(theNavBar());
+      content.appendChild(theFooter());
+    }
   },
 };
 

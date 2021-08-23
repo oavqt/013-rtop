@@ -2,12 +2,7 @@ import './css/styles.css';
 import build from './build';
 
 const thePage = (() => {
-  window.onbeforeunload = function () {
-    scrollTo(0, 0);
-  };
-
-  build.home();
-
+  //Functions
   const thePageToggle = function () {
     window.scrollTo(0, 0);
 
@@ -19,16 +14,30 @@ const thePage = (() => {
     }
 
     if (thePageCurrent === 'menu') {
-      build.menu();
+      build.menu().then((theMenu) => {
+        append(theMenu.default);
+        document.querySelector('.a--menu').classList.add('a--active');
+
+        addEvents();
+      });
     } else if (thePageCurrent === 'about') {
-      build.about();
+      build.about().then((theAbout) => {
+        append(theAbout.default);
+        document.querySelector('.a--about').classList.add('a--active');
+
+        addEvents();
+      });
     } else if (thePageCurrent === 'contact') {
-      build.contact();
+      build.contact().then((theContact) => {
+        append(theContact.default);
+        document.querySelector('.a--contact').classList.add('a--active');
+
+        addEvents();
+      });
     } else {
       build.home();
+      addEvents();
     }
-
-    addEvents();
   };
 
   const addEvents = function () {
@@ -43,11 +52,24 @@ const thePage = (() => {
     });
   };
 
+  const append = function (module) {
+    const content = document.querySelector('.content');
+    const footer = document.querySelector('.content__footer');
+
+    content.insertBefore(module, footer);
+  };
+
+  //First Load
+  window.onbeforeunload = function () {
+    scrollTo(0, 0);
+  };
+  build.home();
   addEvents();
 
   return { addEvents };
 })();
 
+//Server HMR
 if (module.hot) {
   module.hot.accept();
 
