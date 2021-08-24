@@ -19,7 +19,7 @@ const theNavBar = () => {
           { class: 'nav__logo' },
           element.create(
             'a',
-            { class: 'a--logo', href: '' },
+            { class: 'a--logo' },
             element.create('img', { class: 'img--logo', src: logo })
           )
         ),
@@ -29,10 +29,10 @@ const theNavBar = () => {
           { class: 'nav__bar' },
           element.create(
             'div',
-            { class: 'nav__list' },
+            { class: 'bar__list' },
             element.create(
               'ul',
-              { class: 'ul__list' },
+              { class: 'ul--list' },
               element.create(
                 'li',
                 { class: 'li--home' },
@@ -73,7 +73,7 @@ const theNavBar = () => {
           ),
           element.create(
             'div',
-            { class: 'nav__button' },
+            { class: 'bar__button' },
             element.create(
               'button',
               { class: 'button--cart' },

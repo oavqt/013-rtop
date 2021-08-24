@@ -34,7 +34,7 @@ const theDescription = () => {
         element.create(
           'div',
           { class: 'order__text' },
-          element.create('h3', {}, 'Illum voluptatibus!'),
+          element.create('h2', {}, 'Illum voluptatibus!'),
           element.create(
             'p',
             {},
@@ -53,7 +53,7 @@ const theDescription = () => {
         element.create(
           'div',
           { class: 'deliver__text' },
-          element.create('h3', {}, 'Numquam eaque rerum!'),
+          element.create('h2', {}, 'Numquam eaque rerum!'),
           element.create(
             'p',
             {},
@@ -72,7 +72,7 @@ const theDescription = () => {
         element.create(
           'div',
           { class: 'quality__text' },
-          element.create('h3', {}, 'Mollitia vero quam.'),
+          element.create('h2', {}, 'Mollitia vero quam.'),
           element.create(
             'p',
             {},
