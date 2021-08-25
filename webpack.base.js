@@ -3,7 +3,7 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
   entry: {
-    theMain: ['./src/index.js', 'webpack-hot-middleware/client'],
+    theMain: './src/index.js',
   },
   output: {
     filename: '[name].bundle.js',

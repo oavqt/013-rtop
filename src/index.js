@@ -157,20 +157,18 @@ const thePage = (() => {
   };
   build.home();
   reattachEvents();
-
-  return { reattachEvents };
 })();
 
 //Server HMR
-if (module.hot) {
-  module.hot.accept();
+// if (module.hot) {
+//   module.hot.accept();
 
-  let content = document.querySelector('.content');
+//   let content = document.querySelector('.content');
 
-  while (content.firstChild) {
-    content.removeChild(content.lastChild);
-  }
+//   while (content.firstChild) {
+//     content.removeChild(content.lastChild);
+//   }
 
-  build.home();
-  thePage.reattachEvents();
-}
+//   build.home();
+//   thePage.reattachEvents(); //return reattachEvents from thePage
+// }

@@ -4,6 +4,9 @@ const webpack = require('webpack');
 
 const theDevConfig = {
   mode: 'development',
+  entry: {
+    theMain: ['./src/index.js', 'webpack-hot-middleware/client'],
+  },
   module: {
     rules: [
       {
