@@ -1,7 +1,7 @@
 {
-  "name": "012",
+  "name": "013-top",
   "version": "1.0.0",
-  "description": "",
+  "description": "013-top",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.production.js",
@@ -9,7 +9,7 @@
     "build-production": "webpack --config webpack.production.js",
     "server": "node ./server/express.js --config webpack.dev.js"
   },
-  "author": "",
+  "author": "Oav",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.2.0",
